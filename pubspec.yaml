@@ -46,8 +46,8 @@ dependencies:
   qr_flutter: ^4.1.0
   firebase_core: ^2.14.0
   fluttertoast: ^8.2.2
-  pay: ^1.1.1
-  flutter_stripe: ^9.2.2
+  # pay: ^1.1.1
+  # flutter_stripe: ^9.2.2
   cloud_firestore: ^4.8.1
   hooks_riverpod: ^2.3.6
   flutter_hooks: ^0.18.6
