@@ -4,6 +4,34 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	 <!-- Image_Picker -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photo Library Access Warning</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Camera Library Access Warning</string>
+    <!-- ここまで、ギャラリーとカメラのxmlを追加する -->
+
+	 <!-- geolocator Section -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Required to post location information when posting photos and videos.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Required to post location information when posting photos and videos.</string>
+    <!-- End of the geolocator Section -->
+    
+	 <!-- qr_code_scanner -->
+	 <key>io.flutter.embedded_views_preview</key>
+     <true/>
+     <key>NSCameraUsageDescription</key>
+     <string>This app needs camera access to scan QR codes</string>
+     
+	 <!-- speach_to_text -->
+     <key>NSSpeechRecognitionUsageDescription</key>
+     <string>”アプリが音声認識を使用する理由”</string>
+     <key>NSMicrophoneUsageDescription</key>
+     <string>”アプリがマイクにアクセスする理由”</string>
+
+
+
 	<key>CFBundleDisplayName</key>
 	<string>Flutter Reseach</string>
 	<key>CFBundleExecutable</key>
