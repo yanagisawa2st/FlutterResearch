@@ -65,6 +65,10 @@ class _Camera1 extends State<Camera1>{
          floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            ///以下のようにFloatActionButtonを複数使用するにはheroTagで名前を識別する必要がある
+            ///heroTagの名前は任意の物でOK
+            ///75行目Camera
+            ///79行目Garally
             FloatingActionButton(onPressed:(){
               //ボタンをタップすると14～33行目の処理が走る。
               getImageFromCamera();

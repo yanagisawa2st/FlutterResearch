@@ -22,7 +22,11 @@ class _GpsClass extends State<GpsClass>{
   String lonitude = "No Location";
 
   @override 
-
+  /**
+   * getGps関数を消してもアプリの挙動には関係ない。
+   * ただしこちらは最初にテスト用で書いた処理で残しておいた理由は59行目の処理を説明したかったため。
+   * 簡単に現在地のデータを表示したいだけならposition.toStringでTextウィジェットを介して表示できる。
+   */
   Future<void>getGps()async{
 
     //端末の位置情報を取得するための権限をチェックする初期化処理

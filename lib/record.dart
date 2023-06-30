@@ -33,18 +33,21 @@ class _RecordScreen extends State<RecordScreen>{
     }
 
     void errorListener(SpeechRecognitionError error){
+      //録音に失敗した際にsetStateで画面にエラー内容を反映
       setState(() {
         lastError = '${error.errorMsg} - ${error.permanent}';
       });
     }
 
     void StatusListener(String status){
+      //最後の言葉を聞き取り録音
       setState(() {
         lastStatus = status;
       });
     }
 
     Future<void>SpeechOut()async{
+      //初期化処理
       bool available = await speach.initialize(onError: errorListener,onStatus: StatusListener);
 
       if(available){
@@ -54,7 +57,7 @@ class _RecordScreen extends State<RecordScreen>{
         print("The user has denied the use of speech regognition");
       }
     }
-
+    //録音を停止する関数
     Future<void>StopSpeech()async{
       speach.stop();
     }

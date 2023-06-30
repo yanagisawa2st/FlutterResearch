@@ -13,9 +13,13 @@ class UserScreen extends StatefulWidget{
 }
 
 class _UserScreen extends State<UserScreen>{
+  //firebaseのコレクションのnameフィールドから取り出した値を格納する変数
   List<String>name = <String>[];
+  //firebaseのコレクションのageフィールドから取り出した値を格納する変数
   List<int>age = <int>[];
+  //firebaseのコレクションのcountryフィールドから取り出した値を格納する変数
   List<String>country = <String>[];
+  //firebaseのコレクションのpicsフィールドから取り出した値を格納する変数
   List<String>pics = <String>[];
 
   
@@ -38,6 +42,7 @@ class _UserScreen extends State<UserScreen>{
 
     
     void openArray()async{
+       //firebase内で作成したusersコレクションを取得
        var docs = await FirebaseFirestore.instance.collection('users').get();
        print(docs);
       
@@ -91,7 +96,7 @@ class _UserScreen extends State<UserScreen>{
                   /**
                    Image.networkを使用して画像を表示
                    引数内の[]でKeyを取得し、
-                   １，index番号(77行目のitemBuilderの引数にあるindex番号)
+                   １，index番号(82行目のitemBuilderの引数にあるindex番号)
                    2,データベースに記述したフィールド名(写真のURL)
                    →これらの情報を元に画像を表示させている
                    */

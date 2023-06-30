@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         backgroundColor: Colors.blue
       ),
+      //home_menu.dartに中身を記述
       home:HomeMenu(),
       
     );
